@@ -7,6 +7,9 @@
  */
 
 
+ html {
+  scroll-behavior: smooth;
+}
 
 
 
@@ -285,19 +288,25 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 120px;
   z-index: 4;
+  background-color: black;
+  transition: background-color 4s ease;
 }
 
 .header.active {
-  background-color: var(--white);
+  background-color: black;
   box-shadow: var(--shadow-2);
 }
+
 
 .header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
+
 
 .logo {
   color: var(--rich-black-fogra-29-1);
@@ -333,6 +342,7 @@ body {
   transition-duration: 0.5s;
 }
 
+
 .navbar .logo,
 .nav-close-btn { color: var(--white); }
 
@@ -349,6 +359,10 @@ body {
   padding-block: 10px;
   transition: var(--transition-1);
 }
+.navbar .navbar-list .navbar-link {
+  color: white;
+}
+
 
 .navbar-link:is(:hover, :focus) { color: var(--go-green); }
 
@@ -376,7 +390,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: var(--mint-cream);
+  background-color: black;
   padding-block-start: calc(var(--section-padding) + 50px);
   text-align: center;
   overflow: hidden;
@@ -404,9 +418,12 @@ body {
   background-color: var(--go-green);
 }
 
-.hero-title { margin-block: 10px 15px; }
+.hero-title { 
+  margin-block: 10px 15px; 
+  color: white;
+}
 
-.hero-text { color: var(--rich-black-fogra-29-1); }
+.hero-text { color: white; }
 
 .hero .btn-group { margin-block-start: 40px; }
 
@@ -623,7 +640,7 @@ body {
 }
 
 .faq-card .card-action {
-  --action-bg: var(--go-green_8);
+  --action-bg: rgb(225,5,49);
   --color: var(--granite-gray);
 
   background-color: var(--action-bg);
@@ -643,7 +660,7 @@ body {
 }
 
 .faq-card .card-title {
-  color: var(--color);
+  color: white;
   font-size: var(--fs-8);
   transition: var(--transition-1);
 }
