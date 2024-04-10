@@ -317,7 +317,7 @@ body {
 }
 
 .nav-open-btn {
-  color: var(--rich-black-fogra-29-1);
+  color: white;
   font-size: 35px;
 }
 
@@ -355,16 +355,18 @@ body {
 
 .nav-close-btn { font-size: 30px; }
 
+#nav-link{
+  color: aliceblue;
+}
+
 .navbar-link {
   padding-block: 10px;
   transition: var(--transition-1);
 }
-.navbar .navbar-list .navbar-link {
-  color: white;
-}
 
 
-.navbar-link:is(:hover, :focus) { color: var(--go-green); }
+
+#nav-link:is(:hover, :focus) { color: var(--go-green); }
 
 .overlay {
   position: fixed;
