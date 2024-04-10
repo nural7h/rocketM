@@ -1,14 +1,14 @@
-1 section - dark background #3b3b3b (59,59,59)
+1 section - dark background #3b3b3b (59,59,59) - done
 
-bubbles - red ruby
+bubbles - red ruby - done
 
-burger menu - full black
+                                                      burger menu - full black
 
-свържи се с нас -> phone instead record 
+свържи се с нас -> phone instead record   - done
 
 (section for clients)
 
-rocketm logo -> footer
+rocketm logo -> footer  - done
 
-links to facebook, instagram + linkedIn
+links to facebook, instagram + linkedIn  - done
 
