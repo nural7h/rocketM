@@ -603,7 +603,7 @@ body {
 .features-card:hover .card-number { color: var(--go-green); }
 
 .features-card .card-title {
-  font-size: var(--fs-6);
+  font-size:20px;
   margin-block-end: 5px;
 }
 
@@ -618,9 +618,11 @@ body {
 /*-----------------------------------*\
   #FAQ
 \*-----------------------------------*/
-
+.emil h3{
+  color: black;
+}
 .faq .container {
-  display: grid;
+  display: flex;
   gap: 20px;
 }
 
