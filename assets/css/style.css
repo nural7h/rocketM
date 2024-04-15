@@ -247,6 +247,9 @@ body {
   height: 100%;
   object-fit: cover;
 }
+#giphy{
+  border: 5px solid white;
+}
 
 .w-100 { width: 100%; }
 
@@ -458,7 +461,7 @@ body {
   transform: translate(-50%, -50%);
   width: 120%;
   height: 120%;
-  background-image: url('../images/kapki.png');
+  /* background-image: url('../images/kapki.png'); */
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
