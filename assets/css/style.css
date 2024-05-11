@@ -850,9 +850,21 @@ body {
   .emil {
     display: flex;
   }
+  .faq-card{
+    padding: 10px;
+  }
+  #usluga{
+   width: 350px;
+  }
+  #serviceimg{
+    width: 100px;
+  }
 }
 
 @media (min-width: 575px) {
+  .faq-card{
+    padding: 10px;
+  }
 
   /**
    * CUSTOM PROPERTY
@@ -1086,12 +1098,13 @@ body {
    */
 
   .faq .container {
-    /* grid-template-columns: 0.48fr 1fr; */
+    grid-template-columns: 0.48fr 1fr;
     align-items: flex-start;
     display: flex;
-    
     gap: 10px;
+    
   }
+  
 
 
 
@@ -1174,4 +1187,10 @@ body {
 
   .faq-card .card-action.active + .card-content { max-height: 200px; }
 
+}
+@media screen and (max-width: 768px) {
+  /* Adjust card padding for smaller screens */
+  .faq-card {
+    padding: 10px;
+  }
 }
