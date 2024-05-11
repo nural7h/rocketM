@@ -649,7 +649,7 @@ body {
 }
 
 .faq-card {
-  background-color: var(--go-green_5);
+  /* background-color: var(--go-green_5); */
   border-radius: var(--radius-5);
   overflow: hidden;
 }
