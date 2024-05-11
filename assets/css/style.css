@@ -629,8 +629,13 @@ body {
 /*-----------------------------------*\
   #FAQ
 \*-----------------------------------*/
-.emil h3{
-  color: black;
+#team img{
+  height: 150px;
+  width: 130px;
+  margin: auto;
+}
+#team{
+  text-align: center;
 }
 .faq .container {
   display: flex;
