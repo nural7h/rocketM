@@ -838,6 +838,11 @@ body {
 /**
  * responsive for large than 575px screen
  */
+ @media screen and (max-width: 576px) {
+  .emil {
+    display: flex;
+  }
+}
 
 @media (min-width: 575px) {
 
@@ -1072,8 +1077,9 @@ body {
    */
 
   .faq .container {
-    grid-template-columns: 0.48fr 1fr;
+    /* grid-template-columns: 0.48fr 1fr; */
     align-items: flex-start;
+    display: flex;
   }
 
 
