@@ -539,6 +539,14 @@ body {
   padding: 30px 25px;
   text-align: center;
   box-shadow: var(--shadow-1);
+
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
 }
 
 .service-card::after {
@@ -647,7 +655,7 @@ body {
 }
 
 .faq-card .card-action {
-  --action-bg: rgb(225,5,49);
+  --action-bg: rgb(230, 221, 222);
   --color: var(--granite-gray);
 
   background-color: var(--action-bg);
@@ -667,7 +675,7 @@ body {
 }
 
 .faq-card .card-title {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: var(--fs-8);
   transition: var(--transition-1);
 }
@@ -1061,6 +1069,7 @@ body {
     align-items: flex-start;
     gap: 10px;
   }
+  
 
 
 
@@ -1080,6 +1089,8 @@ body {
     /* grid-template-columns: 0.48fr 1fr; */
     align-items: flex-start;
     display: flex;
+    
+    gap: 10px;
   }
 
 
