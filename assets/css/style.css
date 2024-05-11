@@ -637,6 +637,9 @@ body {
 #team{
   text-align: center;
 }
+#team:hover{
+  color: none;
+}
 .faq .container {
   display: flex;
   gap: 20px;
