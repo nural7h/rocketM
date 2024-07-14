@@ -652,6 +652,9 @@
                       <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
                     </button>
                   </form>
+                  <div id="successAlert" class="alert success" style="display:none;">
+                    Вие се свързахте с нас успешно!
+                </div>
                 </p>
               </div>
 
@@ -711,15 +714,27 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzmcK611I9VXjmprPgzK96b8DwmfAQLYHrRsw6W7xXwMV9GmtEJg-zSSxQPsXRcQeae8Q/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => console.log('Success!', response))
-          .catch(error => console.error('Error!', error.message))
-      })
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzmcK611I9VXjmprPgzK96b8DwmfAQLYHrRsw6W7xXwMV9GmtEJg-zSSxQPsXRcQeae8Q/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const successAlert = document.getElementById('successAlert');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    console.log('Success!', response);
+                    showSuccessAlert();
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message));
+        });
+
+        function showSuccessAlert() {
+            successAlert.style.display = 'block';
+            setTimeout(() => {
+                successAlert.style.display = 'none';
+            }, 3000); // Hide the alert after 3 seconds
+        }
     </script>
   </body>
 </html>

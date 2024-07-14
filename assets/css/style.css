@@ -843,7 +843,16 @@ body {
 
 .footer-bottom-link:is(:hover, :focus) { color: var(--go-green); }
 
+.alert {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
 
+.alert.success {
+  background-color: #4caf50;
+}
 
 
 
