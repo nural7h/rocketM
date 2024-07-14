@@ -646,8 +646,8 @@
                 <p class="footer-text">
                   Повече клиенти и продажби с по-малко усилия.
 
-                  <form action="" class="newsletter-form">
-                    <input type="email" name="email-address" placeholder="Напиши си имейла" required class="email-field">
+                  <form name="submit-to-google-sheet" action="" class="newsletter-form">
+                    <input type="email" name="Email" placeholder="Напиши си имейла" required class="email-field">
                     <button type="submit" class="form-btn">
                       <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
                     </button>
@@ -655,41 +655,6 @@
                 </p>
               </div>
 
-              <!-- <ul class="footer-list">
-                <li>
-                  <p class="footer-list-title">Нашите услуги</p>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">Графичен дизайн</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">Инстаграм дизайн</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">Файсбук маркетинг</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">Видео обработки</a>
-                </li>
-              </ul> -->
-
-              <!-- <ul class="footer-list">
-                <li>
-                  <p class="footer-list-title">Компанията</p>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">За нас</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">Услуги</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">Качества</a>
-                </li>
-                <li>
-                  <a href="#" class="footer-link">Задавани въпроси</a>
-                </li>
-              </ul> -->
               
               <ul class="footer-list">
                 <li>
@@ -745,5 +710,16 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzmcK611I9VXjmprPgzK96b8DwmfAQLYHrRsw6W7xXwMV9GmtEJg-zSSxQPsXRcQeae8Q/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => console.log('Success!', response))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
   </body>
 </html>
