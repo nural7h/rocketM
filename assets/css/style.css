@@ -524,8 +524,6 @@ body {
 
 
 
-
-
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
@@ -640,6 +638,36 @@ body {
 #team:hover{
   color: none;
 }
+#team:hover a {
+  color: white; 
+}
+
+#team #creative-manager{
+  display: flex;
+  justify-content: space-between; /* Adjusts the space between the items */
+  align-items: center; /* Aligns items vertically in the center */
+  width: 100%;
+}
+
+#team #creative-manager a{
+ 
+    margin: 10px; 
+    text-align: center;
+}
+
+#team ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#team li {
+  display: flex;
+  align-items: center;
+}
+
 .faq .container {
   display: flex;
   gap: 20px;
