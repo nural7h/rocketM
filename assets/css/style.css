@@ -750,7 +750,7 @@ body {
 \*-----------------------------------*/
 
 .footer {
-  background-color: var(--rich-black-fogra-29-2);
+  background-color: black;
   color: var(--cultured);
 }
 
